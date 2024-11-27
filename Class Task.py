@@ -11,7 +11,7 @@ def calculate_sample_size_proportion(proportion, margin_of_error, confidence_lev
     sample_size = (z_score ** 2 * proportion * (1 - proportion)) / (margin_of_error ** 2)
     return round(sample_size)
 
-file_path = '/Users/issaxzz/Downloads/population_data.csv'
+file_path = 'https://raw.githubusercontent.com/issaxzz/Example/refs/heads/main/population_data.csv'
 data = pd.read_csv(file_path)
 
 confidence_level = 0.95
